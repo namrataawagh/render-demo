@@ -11,8 +11,8 @@
 - Set up a virtual environment:
   ```sh
   python -m venv myenv
-  source venv/bin/activate  # macOS/Linux
-  venv\Scripts\activate  # Windows
+
+  myenv\Scripts\activate  # activate environment
   ```
 - Create a `.gitignore` file to exclude unnecessary files (e.g., `venv/`, `__pycache__/`, `*.pkl`).
 - Place `model.pkl` in the project folder.
