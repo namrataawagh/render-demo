@@ -1,0 +1,6 @@
+1. Train the model
+2. create folder/venv/gitignore/paste model-> Create a flask app -> intsall libraries -> create requirements
+
+3. run locally
+4. create a git hub repo
+5. deploy on render
