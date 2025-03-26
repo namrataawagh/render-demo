@@ -1,18 +1,18 @@
-# Import kaun karega libraries
+# Import libraries
 from flask import Flask ,request, jsonify, render_template
 import pickle
 import numpy as np
 
-# Load karaycha apla model
+# Load the ML model
 model_path = 'model.pkl'
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
-# Initialize karaycha Flask app
+# Initialize the Flask app
 app = Flask(__name__)
 
 
-# Define gharcha address route(main page)
+# Define home route(main page)
 @app.route('/',methods=['GET','POST'])
 def home():
     return render_template('index.html')
