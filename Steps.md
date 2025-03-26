@@ -4,18 +4,18 @@
 - Import necessary libraries: `pandas`, `numpy`, `sklearn`, and `pickle`.
 - Load and preprocess the dataset containing student IQ, CGPA, and placement status.
 - Train a Logistic Regression model.
-- Save the trained model as `placement_model.pkl` using `pickle.dump()`.
+- Save the trained model as `model.pkl` using `pickle.dump()`.
 
 ### 2. Set Up Project Folder and Flask App
 - Create a project folder `render-demo/`.
 - Set up a virtual environment:
   ```sh
-  python -m venv venv
+  python -m venv myenv
   source venv/bin/activate  # macOS/Linux
   venv\Scripts\activate  # Windows
   ```
 - Create a `.gitignore` file to exclude unnecessary files (e.g., `venv/`, `__pycache__/`, `*.pkl`).
-- Place `placement_model.pkl` in the project folder.
+- Place `model.pkl` in the project folder.
 - Create a `templates/` folder to store HTML files.
 - Build a `Flask` app (`app.py`) to load the model and handle user input.
 - Design an HTML interface (`index.html`) for users to enter IQ and CGPA values.
